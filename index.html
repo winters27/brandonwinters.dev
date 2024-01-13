@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>loading...</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <script src="js/lanyard.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/typing.js"></script>
+    </head>
+    <body>
+        <!-- Background -->
+        <img src="https://files.catbox.moe/jp8grt.gif" class="main-background">
+
+        <div class="blurry-container">
+            <div class="content-container">
+                <!-- Typing Animation Container -->
+                <div class="typing-container">
+                    <div class="typing-animation"><span id="typing-text"></span><span class="cursor"></span></div>
+                </div>
+
+                <div class="display">
+                    <div class="userinfo" id="margin">
+                        <img id="avatar" draggable="false" alt="profile picture" width="64" height="64" src="https://cdn.discordapp.com/embed/avatars/0.png" />
+                        <span id="display"></span>
+                        <span id="username"></span>
+                        <span id="status"></span>
+                        <a id="viewuser" class="button" type="button">
+                            <i class="fas fa-user-plus"></i> <!-- Font Awesome 'add user' icon -->
+                        </a>
+                        
+                    </div>
+                    
+                    <div class="activities">
+                        <!-- Spotify Activity Container -->
+                        <div class="spotify-activity" id="spotify-activity">
+                            <!-- Spotify info like image, title, etc. goes here -->
+                            <img class="spotify-image">
+                            <span class="spotify-song"></span>
+                            <span class="spotify-artist"></span>
+                        </div>
+                    </div> 
+                </div>
+
+                <!-- Buttons Container -->
+            <div class="group-container">
+                    <!-- Steam Button -->
+                    <div class="group relative flex h-fit w-fit flex-col items-center justify-start">
+                        <a href="https://steamcommunity.com/id/winters27" class="social-item w-embed flex h-[45px] w-[45px] flex-col items-center justify-center">
+                            <i class="fab fa-steam icon" style="font-size: 30px;"></i>
+                            <div class="label">Steam</div>
+                        </a>
+                    </div>
+                    <!-- Instagram Button -->
+                    <div class="group relative flex h-fit w-fit flex-col items-center justify-start">
+                        <a href="https://www.instagram.com/br_winters" class="social-item w-embed flex h-[45px] w-[45px] flex-col items-center justify-center">
+                            <i class="fab fa-instagram icon" style="font-size: 30px;"></i>
+                            <div class="label">Instagram</div>
+                        </a>
+                    </div>
+                    <!-- Kick Button -->
+                    <div class="group relative flex h-fit w-fit flex-col items-center justify-start">
+                        <a href="https://kick.com/oxic" class="social-item w-embed flex h-[45px] w-[45px] flex-col items-center justify-center">
+                            <i class="fab fa-kickstarter icon" style="font-size: 30px;"></i>
+                            <div class="label">Kick</div>
+                        </a>
+                    </div>
+                    <!-- Discord Button -->
+                    <div class="group relative flex h-fit w-fit flex-col items-center justify-start">
+                        <a href="https://discord.gg/sriracha" class="social-item w-embed flex h-[45px] w-[45px] flex-col items-center justify-center">
+                            <i class="fab fa-discord icon" style="font-size: 30px;"></i>
+                            <div class="label">Discord</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
