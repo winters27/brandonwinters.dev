@@ -1,5 +1,6 @@
 # brandonwinters.dev site
 
+> See the site live at https://brandonwinters.dev
 
 ### Features
 - Discord User Status
