@@ -1,0 +1,1 @@
+This script handles the typing animation on the main page. The sentences that it types is editable in the script, if desired.

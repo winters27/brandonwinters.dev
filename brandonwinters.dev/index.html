@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>loading...</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <script src="js/lanyard/lanyard.js"></script>
+        <script src="js/lanyard/config.js"></script>
+        <script src="js/lanyard/init.js"></script>
+        <script src="js/typing-animation/typing.js"></script>
+        <script src="js/background/animation-container.js"></script>
+        <script src="js/loadout/loadout.js"></script>
+        <script type="module" src="https://cdn.skypack.dev/three@0.134"></script>
+        
+
+    </head>
+    <body>
+        <div id="animation-container"></div>
+        <script type="module" src="js/animation-container.js"></script>
+
+        <!-- Background -->
+        
+
+        <div class="blurry-container">
+            <div id="main-content">
+            <div class="content-container">
+                <!-- Typing Animation Container -->
+                <div class="typing-container">
+                    <div class="typing-animation"><span id="typing-text"></span><span class="cursor"></span></div>
+                </div>
+
+                <div class="display">
+                    <div class="userinfo" id="margin">
+                        <img id="avatar" draggable="false" alt="profile picture" width="64" height="64" src="https://cdn.discordapp.com/embed/avatars/0.png" />
+                        <span id="display"></span>
+                        <span id="username"></span>
+                        <span id="status"></span>
+                        <a id="viewuser" class="button" type="button">
+                            <i class="fas fa-user-plus"></i> <!-- Font Awesome 'add user' icon -->
+                        </a>
+                        
+                    </div>
+                    
+                    <div class="activities">
+                        <!-- Spotify Activity Container -->
+                        <div class="spotify-activity" id="spotify-activity">
+                            <!-- Spotify info like image, title, etc. goes here -->
+                            <img class="spotify-image">
+                            <span class="spotify-song"></span>
+                            <span class="spotify-artist"></span>
+                        </div>
+                    </div> 
+                </div>
+
+                <!-- Buttons Container -->
+            <div class="group-container">
+                    <!-- Steam Button -->
+                    <div class="group relative flex h-fit w-fit flex-col items-center justify-start">
+                        <a href="https://steamcommunity.com/id/winters27" class="social-item w-embed flex h-[45px] w-[45px] flex-col items-center justify-center">
+                            <i class="fab fa-steam icon" style="font-size: 30px;"></i>
+                            <div class="label">Steam</div>
+                        </a>
+                    </div>
+                    <!-- Instagram Button -->
+                    <div class="group relative flex h-fit w-fit flex-col items-center justify-start">
+                        <a href="https://www.instagram.com/br_winters" class="social-item w-embed flex h-[45px] w-[45px] flex-col items-center justify-center">
+                            <i class="fab fa-instagram icon" style="font-size: 30px;"></i>
+                            <div class="label">Instagram</div>
+                        </a>
+                    </div>
+                    <!-- Kick Button -->
+                    <div class="group relative flex h-fit w-fit flex-col items-center justify-start">
+                        <a href="https://kick.com/oxic" class="social-item w-embed flex h-[45px] w-[45px] flex-col items-center justify-center">
+                            <i class="fab fa-kickstarter icon" style="font-size: 30px;"></i>
+                            <div class="label">Kick</div>
+                        </a>
+                    </div>
+                    <!-- Discord Button -->
+                    <div class="group relative flex h-fit w-fit flex-col items-center justify-start">
+                        <a href="https://discord.gg/sriracha" class="social-item w-embed flex h-[45px] w-[45px] flex-col items-center justify-center">
+                            <i class="fab fa-discord icon" style="font-size: 30px;"></i>
+                            <div class="label">Discord</div>
+                        </a>
+                    </div>
+                    <!-- Loadout Button-->
+                    <div class="group relative flex h-fit w-fit flex-col items-center justify-start">
+                        <a href="#pc-loadout" id="loadout-icon">
+                            <i class="fa-solid fa-folder loadout-icon icon"></i>
+                            <div class="label">Loadout</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- Loadout Content (hidden initially) -->
+            <div id="loadout-content" style="display:none;">
+                <!-- PC Components Section -->
+                <div class="loadout-title-container">
+                    <h1>Loadout</h1>
+                    <p class="p-color">Here's a list of everything that I use day-to-day with links to all the items!</p>
+                    <hr>
+                </div>
+            <div class="pc-section">
+                
+                <h2>PC Components</h2>
+                <table>
+                    <tr>
+                        <td><a href="https://www.amazon.com/AMD-5800X3D-16-Thread-Processor-Technology/dp/B09VCJ2SHD">CPU</a></td>
+                        <td>AMD Ryzen 7 5800x3D</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.amazon.com/RTX-3080-Gaming-Trio-12GB/dp/B0957TV4YR/ref=sr_1_2?crid=29OJVIFWTKHG1&dib=eyJ2IjoiMSJ9.tBk-LZdpBLq0dN5A3kBJRe6Jg_JhER0pMVrzJLYbY8J9aTwfYmkdK0TmP3rMZQz0jr1QWIDSt1YVPyRMGonUj6NlrasEKDUDh0brMoq1vyNHwOE1Lz1TFkzRe_lYkW1q6m2s5FFSfFhg81_WidU0XQ.vRf33gIR8OQjOSWzFDwoxEHeNKd3h4NtTsXd95_-9fg&dib_tag=se&keywords=msi+gaming+trio+3080ti&qid=1705195125&s=electronics&sprefix=msi+gaming+trio+3080ti%2Celectronics%2C141&sr=1-2&ufe=app_do%3Aamzn1.fos.765d4786-5719-48b9-b588-eab9385652d5">GPU</a></td>
+                        <td>MSI Geforce RTX 3080Ti</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.corsair.com/us/en/p/memory/cmk32gx4m2e3200c16/vengeancea-lpx-32gb-2-x-16gb-ddr4-dram-3200mhz-c16-memory-kit-black-cmk32gx4m2e3200c16">RAM</a></td>
+                        <td>Corsair Vengeance LPX DDR4 3200</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.phanteks.com/Evolv-Shift-XT.html">Case</a></td>
+                        <td>Phanteks Evolv Shift XT</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.phanteks.com/Glacier-One-T30.html">AIO</a></td>
+                        <td>Phanteks Glacier One 240 T30</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.amazon.com/gp/product/B0813X9G8T/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1">Fans</a></td>
+                        <td>Noctua NF-A12</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.amazon.com/ASUS-ROG-Strix-X570-I-Gaming/dp/B07Y2PZTQ5?th=1">Motherboard</a></td>
+                        <td>ASUS ROG Strix X570-I</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.amazon.com/SAMSUNG-Internal-Gaming-MZ-V8P2T0B-AM/dp/B08RK2SR23">SSD</a></td>
+                        <td>Samsung 980 Pro 2TB</td>
+                    </tr>
+                    <!-- More components as needed -->
+                </table>
+            </div>
+
+            <!-- Peripherals Section -->
+            <div class="peripherals-section">
+                <h2>Peripherals</h2>
+                <table>
+                    <tr>
+                        <td><a href="https://www.amazon.com/Acer-XV272U-Pbmiiprzx-Technology-DisplayHDR400/dp/B07MQBPMJ2">Monitor</a></td>
+                        <td>Acer Nitro x2</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://oblotzky.industries/products/nk65-rfp-edition">Keyboard</a></td>
+                        <td>NK65 - RFP Edition</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.amazon.com/HyperX-QuadCast-Condenser-Microphone-Anti-Vibration/dp/B07NZZZ746?th=1">Microphone</a></td>
+                        <td>HyperX Quadcast</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.sennheiser-hearing.com/en-US/p/ie-300/">IEMs</a></td>
+                        <td>Sennheiser IE300</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.null-audio.com/products/ethos-5n-cgocc-a-silver-plated-earphone-cable">IEM Cable</a></td>
+                        <td>Null Audio Ethos MKV</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.amazon.com/Razer-Ultimate-Hyperspeed-Lightest-Wireless/dp/B07YPC3BQC?th=1">Mouse</a></td>
+                        <td>Razer Viper Ultimate</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.amazon.com/gp/product/B00MIBN71I/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1">Dual Monitor Mount</a></td>
+                        <td>Amazon Ergotron Dupe</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.amazon.com/Elgato-Wave-Mic-Arm-Microphone/dp/B097376LKF">Mic Arm</a></td>
+                        <td>Elgato Mic Arm LP</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.amazon.com/Logitech-Calling-Noise-Canceling-Correction-Microsoft/dp/B01N5UOYC4/ref=sr_1_3_pp?crid=XOSOK5JV56RR&dib=eyJ2IjoiMSJ9.-DRTTs_RqURtx6dyjz6mc7jopUS7LMbFYNSaYZ638jO_8vG327ot7kcq9nTEDVi2YAFHJCBoakyPNjx2U_-1I2CRhYaPomAIMUjkkVfDtnB3FRBtc5K3q3c--NulsfNLgP2oNyQhzN-8CPQFn8LV2g.hJ_OKLy0oiRvlTneJesrQy5cOndUtLDFRcozm1ea-M8&dib_tag=se&keywords=logitech+brio+4k&qid=1705197657&s=electronics&sprefix=logitech+brio+4k%2Celectronics%2C145&sr=1-3&ufe=app_do%3Aamzn1.fos.f5122f16-c3e8-4386-bf32-63e904010ad0">Camera</a></td>
+                        <td>Logitech Brio 4k</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.amazon.com/Elite-2-Controller-Black-Xbox-One/dp/B07SFKTLZM/ref=sr_1_3?crid=2N6TDW5CTV6XT&dib=eyJ2IjoiMSJ9.I1ZNy6I6GoEnHLa9pI-eQi5S1JzSxZRKtoJNhhV8Jq1v4YtHoLfxovxCwRlTqXxNmMJCXKiPnKJN-LIGs2oAJFY_iSlEClxgQ-7JD5vnn8tZ6CI7Nhpzpu1C3zCr4XXwsEXCjoG0ZDN5FFkhkUaqtA.0fTtn2XSdbSvyDXg7ZviqnhEw77fdM5i0R6fCt1r6sI&dib_tag=se&keywords=elite+series+2&qid=1705197723&s=electronics&sprefix=elite+series+%2Celectronics%2C155&sr=1-3&ufe=app_do%3Aamzn1.fos.f5122f16-c3e8-4386-bf32-63e904010ad0">Controller</a></td>
+                        <td>Xbox Elite Series 2</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://scufgaming.com/scuf-elite-series-2-paddles">Paddles</a></td>
+                        <td>Scuf Aluminum Paddles</td>
+                    </tr>
+                    <!-- More peripherals as needed -->
+                </table>
+                <!-- Back to Home Icon -->
+                <div class="back-to-home-icon">
+                    <a href="#" id="back-to-home">
+                        <i class="fa-solid fa-folder-open icon"></i> <!-- Open folder icon with common icon class -->
+                    </a>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+        <script src="js/loadout/loadout.js"></script>
+    </body>
+</html>
